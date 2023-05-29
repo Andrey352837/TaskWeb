@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_TaskModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TaskDB">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="registerDate" Type="DateTime" Precision="0" />
+    <Property Name="completeTask" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="completeDateTask" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="DB_TaskEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TaskDB" EntityType="Self.TaskDB" />
+  </EntityContainer>
+</Schema>

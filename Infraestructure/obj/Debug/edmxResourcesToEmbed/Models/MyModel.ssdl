@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_TaskModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TaskDB">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="20" />
+    <Property Name="description" Type="nvarchar" MaxLength="250" />
+    <Property Name="registerDate" Type="date" />
+    <Property Name="completeTask" Type="nvarchar" MaxLength="20" />
+    <Property Name="completeDateTask" Type="date" />
+  </EntityType>
+  <EntityContainer Name="DB_TaskModelStoreContainer">
+    <EntitySet Name="TaskDB" EntityType="Self.TaskDB" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

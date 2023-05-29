@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{BBB2FA63-8D9E-4B26-9F9E-C24ACA119DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWeb", "TaskWeb\TaskWeb.csproj", "{5B53872C-6F7E-4022-A125-9823E295AB71}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBB2FA63-8D9E-4B26-9F9E-C24ACA119DB3} = {BBB2FA63-8D9E-4B26-9F9E-C24ACA119DB3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBB2FA63-8D9E-4B26-9F9E-C24ACA119DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB2FA63-8D9E-4B26-9F9E-C24ACA119DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB2FA63-8D9E-4B26-9F9E-C24ACA119DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB2FA63-8D9E-4B26-9F9E-C24ACA119DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B53872C-6F7E-4022-A125-9823E295AB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B53872C-6F7E-4022-A125-9823E295AB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B53872C-6F7E-4022-A125-9823E295AB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B53872C-6F7E-4022-A125-9823E295AB71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23DB64DC-BBD3-48A9-A8B8-6CBAEE8D9E93}
+	EndGlobalSection
+EndGlobal

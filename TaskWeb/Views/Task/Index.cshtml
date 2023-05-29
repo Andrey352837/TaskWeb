@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Infraestructure.Models.TaskDB>
+@{
+    ViewBag.Title = "TaskDB";
+}
+
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.registerDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.completeDateTask)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.completeTask)
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.registerDate)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.completeDateTask)
+
+            </td>
+            <td>
+                @{
+                    String completada = "Completada";
+                    if (int.Parse(item.completeTask) == 0)
+                    {
+                        completada = "No Realizo la tarea";
+                    }
+
+                }
+
+                @Html.DisplayFor(modelItem => completada)
+
+            </td>
+
+
+        </tr>
+    }
+
+</table>
